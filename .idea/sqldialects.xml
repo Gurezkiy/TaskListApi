@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="mock:///ApiController.php" dialect="MySQL" />
+    <file url="mock:///ApiController.php" dialect="GenericSQL" />
+    <file url="mock:///ApiController.php" dialect="DB2" />
+    <file url="mock:///ApiController.php" dialect="HSQLDB" />
+    <file url="mock:///ApiController.php" dialect="TSQL" />
+    <file url="mock:///ApiController.php" dialect="OracleSqlPlus" />
+    <file url="mock:///ApiController.php" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/src/ApiBundle/Controller/Api/ApiController.php" dialect="TSQL" />
+  </component>
+</project>

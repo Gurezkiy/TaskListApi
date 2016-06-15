@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: gurez
+ * Date: 15.06.2016
+ * Time: 18:26
+ */
+
+namespace ApiBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="privileges")
+ */
+class Groups
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $userId;
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $name;
+    public function Add($_userId,$_name,$em){
+        $this->userId = $_userId;
+        $this->name = $_name;
+        $em->persist($this);
+        $em->flush();
+    }
+}
